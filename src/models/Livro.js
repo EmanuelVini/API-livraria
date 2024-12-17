@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-//Criação de um modelo para o livro que sera utilizado no banco na fforma do mongoose
+//Criação de um modelo para o livro que sera utilizado no banco na forma do mongoose
 const livroSchema = new mongoose.Schema(
   {
     id: { type: mongoose.Schema.Types.ObjectId },
@@ -12,6 +12,7 @@ const livroSchema = new mongoose.Schema(
   { versionKey: false }
 );
 
+//const de modelo livro para a importação
 const livro = mongoose.model('livros', livroSchema);
 
 export default livro;
